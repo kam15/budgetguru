@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Summary"
+    android:background="@drawable/background1" >
+
+    <TextView
+        android:id="@+id/monthsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        />
+
+    <TextView
+        android:id="@+id/cashsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/monthsum"
+        android:layout_marginTop="20dp"
+       />
+
+    <TextView
+        android:id="@+id/foodsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cashsum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+         />
+
+    <TextView
+        android:id="@+id/travelsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/foodsum"
+        android:layout_marginTop="20dp"
+         />
+
+        <TextView
+        android:id="@+id/entertainsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/travelsum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+         />
+
+    <TextView
+        android:id="@+id/clothsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/entertainsum"
+        android:layout_marginTop="20dp"
+         />
+
+        <TextView
+        android:id="@+id/billsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clothsum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/medsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/billsum"
+        android:layout_marginTop="20dp"
+        />
+
+        <TextView
+        android:id="@+id/missingsum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medsum"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/othersum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/missingsum"
+        android:layout_marginTop="20dp"
+        />
+
+    
+</RelativeLayout>

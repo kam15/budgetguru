@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" 
+    android:background="@drawable/background1">
+    
+    <LinearLayout
+        
+        android:id="@+id/EdDelViewborrowed"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true" >
+
+        <Button 
+        android:id="@+id/edit_button"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="@string/Edit"
+        />
+
+        <Button 
+        android:id="@+id/delete_button"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="@string/Delete"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/viewborrowedheading1"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EdDelViewborrowed"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="@string/RememberBorrowed" />
+    
+    <TextView 
+        android:id="@+id/viewborroweddesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="@string/Desc"
+        android:layout_below="@id/viewborrowedheading1"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        />
+    
+    <TextView 
+        android:id="@+id/viewdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/viewborroweddesc"
+        android:layout_alignBaseline="@id/viewborroweddesc"
+        />
+    
+    <TextView 
+        android:id="@+id/viewborrowedcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Category"
+        android:textColor="#000000"
+        android:layout_below="@id/viewborroweddesc"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        />
+    
+    <TextView 
+        android:id="@+id/viewcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/viewborrowedcategory"
+        android:layout_alignBaseline="@id/viewborrowedcategory"
+        />
+    
+    <TextView
+        android:id="@+id/viewborrowedheading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewborrowedcategory"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:text="@string/Borrowed" />
+    
+    <TextView 
+        android:id="@+id/viewdateborrowed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/On"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_below="@id/viewborrowedheading2"
+        android:layout_marginTop="10dp"
+        />
+    
+    <TextView 
+        android:id="@+id/viewdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/viewdateborrowed"
+        android:layout_alignBaseline="@id/viewdateborrowed"
+        />
+    
+    <TextView 
+        android:id="@+id/viewtimeborrowed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/At"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@id/viewdateborrowed"
+        android:layout_marginTop="10dp"
+        />
+    
+    <TextView 
+        android:id="@+id/viewtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/viewtimeborrowed"
+        android:layout_alignBaseline="@id/viewtimeborrowed"
+        />
+    
+    <TextView
+        android:id="@+id/viewborrowedheading3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewtimeborrowed"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:text="@string/Return" />
+    
+    <TextView 
+        android:id="@+id/viewdateofret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/On"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@id/viewborrowedheading3"
+        android:layout_marginTop="10dp"
+        />
+    
+    <TextView 
+        android:id="@+id/viewdate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/viewdateofret"
+        android:layout_alignBaseline="@id/viewdateofret"
+        />
+    
+    <TextView 
+        android:id="@+id/viewtimeofret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/At"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@id/viewdateofret"
+        android:layout_marginTop="10dp"
+        />
+    
+    <TextView 
+        android:id="@+id/viewtime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_toRightOf="@id/viewtimeofret"
+        android:layout_alignBaseline="@id/viewtimeofret"
+        />
+    
+
+</RelativeLayout>

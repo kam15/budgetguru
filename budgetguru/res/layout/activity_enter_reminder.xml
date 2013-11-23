@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EnterReminder" 
+    android:background="@drawable/background1">
+    
+    <Button 
+        android:id="@+id/add_category_button"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="@string/AddCategory"
+        />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_category_button"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="@string/AddReminder"
+        android:textColor="#000000" />
+    
+    <TextView 
+        android:id="@+id/enter_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Desc"
+        android:layout_below="@id/heading"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        />
+    
+    <EditText 
+        android:id="@+id/desc_et"
+        android:hint="@string/DescHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/enter_desc"
+        android:layout_alignBaseline="@id/enter_desc"
+        />
+    
+    <TextView 
+        android:id="@+id/select_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Category"
+        android:layout_below="@id/enter_desc"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        />
+    
+    <Spinner 
+        android:id="@+id/category_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_category"
+        
+        />
+    
+    <TextView 
+        android:id="@+id/select_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Type"
+        android:layout_below="@id/category_spinner"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        />
+    
+    <Spinner 
+        android:id="@+id/type_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_type"
+        
+        />
+    
+    <TextView 
+        android:id="@+id/select_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RemindOn"
+        android:textSize="18sp"
+        android:layout_below="@id/type_spinner"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        />
+    
+    <DatePicker 
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_date"
+        android:layout_marginTop="10dp"
+        />
+    
+    <TextView 
+        android:id="@+id/select_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RemindAt"
+        android:textSize="18sp"
+        android:layout_below="@id/date_picker"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        />
+    
+    <TimePicker 
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_time"
+        android:layout_marginTop="10dp"    
+        android:layout_marginBottom="20dp"  
+        />
+    
+    <Button 
+        android:id="@+id/submit_button"
+        android:layout_width="100dp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_picker"
+        android:text="@string/SetAlarm"
+        
+        />
+    
+    <Button 
+        android:id="@+id/reset_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/submit_button"
+        android:textSize="18sp"
+        android:text="@string/Reset"
+        android:layout_below="@id/time_picker"
+        android:layout_marginLeft="30dp"
+        
+        />
+    
+</RelativeLayout>
+
+</ScrollView>
