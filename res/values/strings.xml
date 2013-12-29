@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#660033</color>
+
+    <string name="title_activity_enter_reminder">EnterReminder</string>
+    <string name="Desc">Description</string>
+    <string name="app_name">budgetguru</string>
+    <string name="change_password">Change Password</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_update">Update</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="some_text">  SEARCH  ANY EXPENSE!</string>
+    <string name="Category">Category</string>
+    <string name="RemindOn">Remind on</string>
+    <string name="RemindAt">Remind at</string>
+    <string name="SetAlarm">Set Alarm</string>
+    <string name="SelectCat">Select Category to View By</string>
+    <string name="AddAReminder">Add Reminder</string>
+    <string name="Categories">Categories</string>
+    <string name="AddCategory">Add A Category</string>
+    <string name="IGave">You Gave</string>
+    <string name="ITook">You Took</string>
+    <string name="Edit">Edit</string>
+    <string name="Delete">Delete</string>
+    <string name="Add">Add</string>
+    <string name="ViewLent">What have I lent?</string>
+    <string name="ViewBorrowed">What have I borrowed?</string>
+    <string name="RememberLent">Do you remember this thing you lent?</string>
+    <string name="LentReminders">Lent items:</string>
+    <string name="BorrowedReminders">Borrowed items:</string>
+    <string name="RememberBorrowed">Do you remember this thing you borrowed?</string>
+    <string name="Lent">You lent it </string>
+    <string name="Borrowed">You borrowed it </string>
+    <string name="CategoryMsg">Enter the name of the category you wish to add</string>
+    <string name="CategoryName">Category Name</string>
+    <string name="CategoryHint">Name of new category</string>
+    <string name="On">On</string>
+    <string name="At">At</string>
+    <string name="Take">You must take it back</string>
+    <string name="Return">You must return it</string>
+    <string name="AddReminder">You need to be reminded about:</string>
+    <string name="DescHint">Enter description here</string>
+    <string name="DateHint">Enter date here</string>
+    <string name="Reset">Reset</string>
+    <string name="Type">Type</string>
+    <string name="title_activity_alarm_receiver">AlarmReceiverActivity</string>
+    <string name="title_activity_display_reminders_list">DisplayRemindersList</string>
+    <string name="title_activity_view_reminder">ViewReminder</string>
+    <string name="title_activity_edit_reminder">EditReminder</string>
+    <string name="title_activity_add_category">AddCategory</string>
+    <string name="title_activity_view_by_categories">ViewByCategories</string>
+    <string name="title_activity_display_borrowed_reminders">DisplayBorrowedReminders</string>
+    <string name="title_activity_choose_category">ChooseCategory</string>
+
+    <string-array name="drawer_items">
+        <item>Home</item>
+        <item>Initial Amount</item>
+        <item>View Today\'s Expenses</item>
+        <item>View Specified Date Expenses</item>
+        <item>Report</item>
+        <item>Search</item>
+        <item>Lent/Borrowed</item>
+        <item>Change Password</item>
+        <item>About</item>
+    </string-array>
+
+    <string name="title_activity_quick_feed">QuickFeed</string>
+    <string name="initial_amount">Initial Amount</string>
+    <string name="title_activity_transaction">TransactionActivity</string>
+    <string name="title_activity_summary">Summary</string>
+    <string name="title_activity_reports">Reports</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_pie_chart_">PieChart</string>
+    <string name="title_activity_about">About</string>
+
+</resources>

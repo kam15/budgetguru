@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ForgetMeNot"
+    android:background="@drawable/background1" >
+    
+     <LinearLayout
+        
+        android:id="@+id/AddCategoriesViewLent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true" >
+
+        <Button 
+        android:id="@+id/addreminder_button"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="@string/AddAReminder"
+        />
+
+        <Button 
+        android:id="@+id/viewcategories_button"
+        android:layout_width="0dp"
+        android:textSize="18sp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="@string/Categories"
+        />
+    </LinearLayout>
+    
+    
+    <TextView
+        android:id="@+id/lentheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LentReminders"
+        android:layout_below="@+id/AddCategoriesViewLent"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+ <ListView
+        android:id="@+id/lent_listview"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/lentheading"
+        android:layout_height="300dp" 
+        android:background="@color/blue">
+    </ListView>  
+    
+ <Button 
+        android:id="@+id/viewborrowedbutton"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lent_listview"
+        android:layout_height="wrap_content"
+        android:text="@string/ViewBorrowed"
+        />
+
+</RelativeLayout>
+</ScrollView>

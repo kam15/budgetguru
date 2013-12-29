@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.budgetguru"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/money2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.budgetguru.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.budgetguru.PasswordActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.EnterReminder"
+            android:label="@string/title_activity_enter_reminder" >
+        </activity>
+        <activity android:name="com.example.budgetguru.LowerMain" >
+        </activity>
+        <activity android:name="com.example.budgetguru.PieChart_lower" >
+        </activity>
+        <activity android:name="com.example.budgetguru.LowerInitialAmount" >
+        </activity>
+        <activity android:name="com.example.budgetguru.LowerTodaysExpenses" >
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.AlarmReceiverActivity"
+            android:label="@string/title_activity_alarm_receiver" >
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.ForgetMeNot"
+            android:label="@string/title_activity_display_reminders_list" >
+            android:parentActivityName="com.example.budgetguru.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.budgetguru.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.ViewReminder"
+            android:label="@string/title_activity_view_reminder" >
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.EditReminder"
+            android:label="@string/title_activity_edit_reminder" >
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.AddCategory"
+            android:label="@string/title_activity_add_category" >
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.ViewByCategories"
+            android:label="@string/title_activity_view_by_categories" >
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.DisplayBorrowedReminders"
+            android:label="@string/title_activity_display_borrowed_reminders" >
+            android:parentActivityName="com.example.budgetguru.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.budgetguru.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.ChooseCategory"
+            android:label="@string/title_activity_choose_category" >
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.TransactionActivity"
+            android:label="@string/title_activity_transaction" >
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.Summary"
+            android:label="@string/title_activity_summary"
+            android:parentActivityName="com.example.budgetguru.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.budgetguru.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.Reports"
+            android:label="@string/title_activity_reports"
+            android:parentActivityName="com.example.budgetguru.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.budgetguru.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.AutoCompActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.example.budgetguru.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.budgetguru.MainActivity" />
+        </activity>
+        <activity android:name="com.example.budgetguru.PieChartActivity" >
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.PieChart_Activity"
+            android:label="@string/title_activity_pie_chart_"
+            android:parentActivityName="com.example.budgetguru.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.budgetguru.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.PieChartDetails"
+            android:label="@string/title_activity_pie_chart_"
+            android:parentActivityName="com.example.budgetguru.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.budgetguru.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.Change_Password"
+            android:label="@string/change_password"
+            android:parentActivityName="com.example.budgetguru.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.budgetguru.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.budgetguru.About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.example.budgetguru.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.budgetguru.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

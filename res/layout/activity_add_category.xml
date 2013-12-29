@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddCategory"
+    android:background="@drawable/background1" >
+
+    <TextView
+        android:id="@+id/newcatheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CategoryMsg"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/addnewcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newcatheading"
+        android:layout_marginTop="50dp"
+        android:text="@string/CategoryName"
+        android:textSize="18sp" 
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/addcategory_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/addnewcategory"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/addnewcategory"
+        android:hint="@string/CategoryHint" />
+
+    <Button
+        android:id="@+id/addcat_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addnewcategory"
+        android:layout_marginTop="50dp"
+        android:text="@string/Add"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/resetcat_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addnewcategory"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/addcat_button"
+        android:text="@string/Reset"
+        android:textSize="18sp" />
+
+</RelativeLayout>
